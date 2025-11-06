@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class PauseMenu : MonoBehaviour
+{
+    public static bool gamePaused = false;
+
+    public GameObject pauseMenuUI;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (gamePaused)
+            {
+                ResumeGame();
+            }
+            else {
+                PauseGame();
+            }
+        }
+    }
+
+    void ResumeGame() {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        gamePaused = false;
+    }
+
+    void PauseGame() { 
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        gamePaused = true;
+    }
+}
