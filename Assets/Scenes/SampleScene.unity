@@ -1862,6 +1862,7 @@ GameObject:
   - component: {fileID: 1211550833}
   - component: {fileID: 1211550835}
   - component: {fileID: 1211550834}
+  - component: {fileID: 1211550836}
   m_Layer: 5
   m_Name: MenuPanel
   m_TagString: Untagged
@@ -1933,6 +1934,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211550832}
   m_CullTransparentMesh: 1
+--- !u!225 &1211550836
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211550832}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1259561473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2504,6 @@ GameObject:
   - component: {fileID: 1363927353}
   - component: {fileID: 1363927352}
   - component: {fileID: 1363927356}
-  - component: {fileID: 1363927357}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2594,19 +2606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa90a1a175acd634fb4c868f13a0aaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiGroup: {fileID: 1211550836}
   pauseMenuUI: {fileID: 1211550832}
---- !u!225 &1363927357
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363927351}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1527787321
 GameObject:
   m_ObjectHideFlags: 0
