@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         gamePaused = true;
         //uiGroup.alpha = 1f;
-        //PlayerPrefs.SetInt("ValorEntero", 10);
+        //PlayerPrefs.SetInt("ValorEntero", 10); //Elementos de save and load de unity
 
         Debug.Log(PlayerPrefs.GetInt("ValorEntero"));
 
